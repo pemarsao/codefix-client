@@ -12,20 +12,20 @@
     "@types/node": "24.10.1",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "autoprefixer": "10.4.22",
+    "autoprefixer": "^10.4.22",
     "eslint": "9.39.1",
     "eslint-config-next": "16.0.7",
     "next": "16.0.7",
-    "postcss": "8.5.6",
+    "postcss": "^8.5.6",
     "react": "19.2.1",
     "react-dom": "19.2.1",
-    "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
     "yarm": "^0.4.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
     "prettier": "3.7.4",
-    "prettier-plugin-tailwindcss": "^0.7.2"
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "3"
   }
 }
