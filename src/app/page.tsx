@@ -3,7 +3,7 @@ import Header from './components/Header'
 
 export default function Home() {
   return (
-    <div className='relative h-screen overflow-hidden bg-gradient-to-b lg:h-[140vh]'>
+    <div className='relative h-screen overflow-hidden bg-gradient-to-b from-transparent to-black lg:h-[140vh]'>
       <Header />
       <main className='relative pb-24 pl-4 lg:pl-16'>
         <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[65vh] lg:justify-end lg:pb-12'>
