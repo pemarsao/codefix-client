@@ -1,3 +1,4 @@
+import BugButton from "@/app/components/BugButton";
 import { getAppSettings, getUserInfo } from "@/app/lib/settings";
 import React from "react";
 
@@ -20,6 +21,7 @@ async function UserSettings() {
                 <p>Age: {age}</p>
 
             </div>
+            <BugButton />
         </div>
     );
 }

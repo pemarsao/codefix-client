@@ -1,5 +1,6 @@
 import React from "react";
 import { getAppSettings } from "../lib/settings";
+import BugButton from "../components/BugButton";
 
 async function Settings() {
     const {theme, language} = await getAppSettings();
@@ -17,6 +18,7 @@ async function Settings() {
                 <p>Language: {language}</p>
 
             </div>
+            <BugButton />
         </div>
     );
 }
