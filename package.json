@@ -24,7 +24,8 @@
     "react-dom": "19.2.1",
     "tailwind-scrollbar-hide": "^4.0.0",
     "typescript": "5.9.3",
-    "yarm": "^0.4.0"
+    "yarm": "^0.4.0",
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.17",
