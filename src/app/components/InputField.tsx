@@ -14,6 +14,7 @@ export const InputField: React.FC<InputFieldProps> = ({ id, type, label, placeho
             <input
                 type={type}
                 id={id}
+                name={id}
                 placeholder={placeholder}
                 className="rounded-lg border-gray-600 bg-gray-700 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 foxus:border-transparent" />
         </div>

@@ -1,10 +1,11 @@
 'use client';
 
+import { FormEvent } from "react";
 import { InputField } from "./InputField";
 
 type AuthFormProps = {
     formType: 'login' | 'register';
-    onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+    onSubmit: (e: FormEvent<HTMLFormElement>) => void;
 };
 
 export const AuthForm: React.FC<AuthFormProps> = ({ formType, onSubmit }) => {
