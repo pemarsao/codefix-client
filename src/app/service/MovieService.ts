@@ -14,6 +14,6 @@ export const getMoviesByGenre = async (genre: string, options?: RequestOptions):
     return apiRequest(`movies`, { genres_like: encodeURIComponent(genre) }, options);
 }
 
-export const searchMovies = async (title: string, genre: string, options?: RequestOptions): Promise<Movies> => {
+export const searchMovies = async (title: string = '', genre: string = '', options?: RequestOptions): Promise<Movies> => {
     return apiRequest(`movies`, { title_like: encodeURIComponent(title), genres_like: encodeURIComponent(genre) }, options);
 }
