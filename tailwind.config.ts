@@ -16,6 +16,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [scrollbarHide],
+  plugins: [scrollbarHide, require('@vidstack/react/tailwind.cjs')],
 }
 export default config
