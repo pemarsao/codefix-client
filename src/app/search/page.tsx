@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { searchMovies } from "../service/MovieService";
 import Header from "../components/Header";
 import { MovieCard } from "../components/MovieCard";
@@ -20,7 +20,9 @@ export default async function SearchResults({ searchParams }: SearchResultsProps
         return (
             <div>
                 <div className="relative bg-gradient-to-b pb-8">
-                    <Header />
+                    <Suspense fallback={<div>Carregando...</div>}>
+                        <Header />
+                    </Suspense>
                     <main className="relative mb-48 mt-20 h-screen pl-4 lg:pl-16">
                         <h1 className="mb-4 text-2xl font-bold">
                             Search results for: <span className="text-red-500">{title}</span>
@@ -36,7 +38,9 @@ export default async function SearchResults({ searchParams }: SearchResultsProps
     return (
         <div>
             <div className="relative bg-gradient-to-b pb-8">
-                <Header />
+                <Suspense fallback={<div>Carregando...</div>}>
+                    <Header />
+                </Suspense>
                 <main className="relative mb-48 mt-20 h-screen pl-4 lg:pl-16">
                     <h1 className="mb-4 text-2xl font-bold">
                         Search results for: <span className="text-red-500">{title}</span>
