@@ -1,7 +1,7 @@
 import Header from "@/app/components/Header";
 import Player from "@/app/components/Player";
 import { getMovieById } from "@/app/service/MovieService";
-import React from "react";
+import React, { Suspense } from "react";
 
 interface IWatchProps {
     params: {
@@ -17,7 +17,9 @@ export default async function Watch({ params }: IWatchProps) {
     if (!movie) {
         return (
             <div className="flex h-screen justify-center align-middle">
-                <Header />
+                <Suspense fallback={<div>Carregando...</div>}>
+                    <Header />
+                </Suspense>
                 <main className="flex flex-1 flex-col items-center justify-center px-20 text-center">
                     <h1 className="text-2xl font-bold md:text-4xl lg:text-7xl">
                         Sorry, this movie is not available.

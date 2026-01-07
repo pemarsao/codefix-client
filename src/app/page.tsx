@@ -2,6 +2,7 @@ import Header from './components/Header';
 import { MovieRow } from './components/MovieRow';
 import { Banner } from './components/Banner';
 import { getFeaturedMovie, getMoviesByGenre } from './service/MovieService';
+import { Suspense } from 'react';
 
 
 export default async function Home() {
@@ -15,7 +16,9 @@ export default async function Home() {
   );
   return (
     <div className='relative h-screen overflow-hidden bg-gradient-to-b lg:h-[240vh]'>
-      <Header />
+      <Suspense fallback={<div>Carregando...</div>}>
+        <Header />
+      </Suspense>
       <main className='relative pb-24 pl-4 lg:pl-16'>
         <Banner movie={featuredMovie}/>
         {movies.map((movie) => (
