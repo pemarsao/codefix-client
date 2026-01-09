@@ -1,8 +1,8 @@
 import Header from './components/Header';
 import { MovieRow } from './components/MovieRow';
 import { Banner } from './components/Banner';
-import { getFeaturedMovie, getMoviesByGenre } from './service/MovieService';
 import { Suspense } from 'react';
+import { getFeaturedMovie, getMoviesByGenre } from './service/MovieQuery';
 
 
 export default async function Home() {

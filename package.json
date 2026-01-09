@@ -11,6 +11,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@apollo/client": "3.8",
     "@heroicons/react": "^2.2.0",
     "@types/node": "24.10.1",
     "@types/react": "19.2.7",
@@ -19,11 +20,14 @@
     "autoprefixer": "^10.4.22",
     "eslint": "9.39.1",
     "eslint-config-next": "16.0.7",
+    "graphql": "^16.12.0",
+    "install": "^0.13.0",
     "json-server": "^1.0.0-beta.3",
     "next": "16.0.7",
     "postcss": "^8.5.6",
     "react": "19.2.1",
     "react-dom": "19.2.1",
+    "rxjs": "^7.8.2",
     "tailwind-scrollbar-hide": "^4.0.0",
     "typescript": "5.9.3",
     "yarm": "^0.4.0",
